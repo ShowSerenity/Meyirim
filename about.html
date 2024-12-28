@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О нас - Мейірім</title>
   <link rel="stylesheet" href="css/shared.css">
@@ -9,34 +10,138 @@
 </head>
 <body>
   <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="nav-logo">Мейірім</a>
-      <div class="nav-links">
-        <a href="about.html" class="nav-item">О нас</a>
-        <div class="dropdown">
-          <button class="dropdown-btn">Проекты</button>
-          <div class="dropdown-content">
-            <a href="defactofm.html">DeFactoFM</a>
-            <a href="kids.html">Программа для детей</a>
-            <a href="project3.html">Проект 3</a>
-            <a href="project4.html">Проект 4</a>
-          </div>
+  <header class="bg-feeee3 text-center py-4">
+
+    <!--Logo--> 
+    <h1>MEYIRIM</h1>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-feeee3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-lang-text="home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" data-lang-text="about">О Нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html" data-lang-text="contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" data-lan-text="projects">Проекты</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <a href="contacts.html" class="nav-item">Контакты</a>
-      </div>
-      <div class="language-switcher">
-        <button onclick="setLanguage('ru')">Рус</button>
-        <button onclick="setLanguage('en')">Eng</button>
-        <button onclick="setLanguage('kk')">Қаз</button>
-      </div>
     </nav>
+
+    <!--Links-->
+    <div id="icons">
+        <a href="https://youtube.com/@defactofm?si=21AjkzIYzgongp6d" target="_blank" class="icon" data-toggle="tooltip" title="Check out our videos">
+            <i class="fa-brands fa-youtube fa-2xl" style="color: #FF0000"></i>
+        </a>
+        <a href="https://www.facebook.com/share/g/14iVq5oUYu/?mibextid=wwXIfr" target="_blank" class="icon" data-toggle="tooltip" title="Visit our facebook page">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #1877F2"></i>
+        </a>
+        <a href="https://vk.com/id475970846" target="_blank" class="icon" data-toggle="tooltip" title="We are also on vk">
+            <i class="fa-brands fa-vk fa-2xl" style="color: #1877F2;"></i>
+        </a>
+        <a href="https://t.me/defactofm" target="_blank" class="icon" data-toggle="tooltip" title="We regularly post news here">
+            <i class="fa-brands fa-telegram fa-2xl" style="color: #0088CC;"></i>
+        </a>
+        <a href="https://www.instagram.com/defactofm/profilecard/?igsh=MmYxMjMxajd3N2V2" target="_blank" class="icon" data-toggle="tooltip" title="Our instagram page">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #E4405F;"></i>
+        </a>
+
+        <div class="language-dropdown">
+            <button class="language-button">Рус</button>
+            <div class="language-list hidden">
+                <button class="language-option" data-lang="en">Eng</button>
+                <button class="language-option" data-lang="ru">Рус</button>
+                <button class="language-option" data-lang="kz">Қаз</button>
+            </div>
+        </div>
+    </div>
+
   </header>
 
   <!-- Main Content -->
   <main>
-    <h1>О нас</h1>
-    <p>Мейірім стремится поддерживать людей с ограниченными возможностями, защищать их права и реализовывать различные проекты.</p>
+    <div class="about-container">
+
+      <h4 data-lang-text="aboutTitle">О Нас</h4>
+      <h5 data-lang-text="storyTitle">Наш путь: Расширение возможностей и строительство будущего</h5>
+      <p style="line-height: 2;" data-lang-text="storyText">Общественное объединение инвалидов «Мейірім» поддерживает людей с инвалидностью в Казахстане, создавая условия для их активной и достойной жизни.<br>Наша миссия — способствовать построению инклюзивного общества, где каждый человек с инвалидностью имеет равные возможности для самореализации и полноценного участия в социальной жизни. Наши цели: создание равных возможностей для людей с инвалидностью, оказание комплексной помощи и поддержки, реализация социально-инклюзивных проектов и повышение качества жизни участников и их интеграция в общество.
+        </p>
+      </div>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4 data-lang-text="contactUs">Контактные Данные</h4>
+                <ul>
+                      <li><i class="fa-solid fa-location-dot fa-lg" style="color: #ffffff;"></i><a data-lang-text="address" href="https://yandex.kz/maps/-/CDCGb4-P" target="_blank"> Талдыкорган, область<br> Жетысу, микрорайон Каратал, 6А</a></li>
+                      <li><a href="mailto:ooi.meirm@mail.ru"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;"></i> ooi.meirm@mail.ru</a>
+                      <li><a href="#"><i class="fa-solid fa-phone fa-lg" style="color: #ffffff;"></i> +7 (702) 932-9069<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+7 (707) 932-9069</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+
+                <h4 data-lang-text="aboutUsTitle">О Нас</h4>
+
+                <ul>
+                  <li><p data-lang-text="aboutUs">Мы — общественное объединение, занимающееся поддержкой людей с ограниченными возможностями.</p></li>
+                </ul>
+
+                <div class="social-links">
+                  <a href="https://youtube.com/@defactofm?si=21AjkzIYzgongp6d" target="_blank" class="margin-p" data-toggle="tooltip" title="Check out our videos">
+                      <i class="fa-brands fa-youtube fa-2xl" style="color: #FF0000"></i>
+                  </a>
+                  <a href="https://www.facebook.com/share/g/14iVq5oUYu/?mibextid=wwXIfr" target="_blank" class="margin-p" data-toggle="tooltip" title="Visit our facebook page">
+                      <i class="fa-brands fa-facebook fa-2xl" style="color: #1877F2"></i>
+                  </a>
+                  <a href="https://vk.com/id475970846" target="_blank" class="margin-p" data-toggle="tooltip" title="We are also on vk">
+                      <i class="fa-brands fa-vk fa-2xl" style="color: #1877F2;"></i>
+                  </a>
+                  <a href="https://t.me/defactofm" target="_blank" class="margin-p" data-toggle="tooltip" title="We regularly post news here">
+                      <i class="fa-brands fa-telegram fa-2xl" style="color: #0088CC;"></i>
+                  </a>
+                  <a href="https://www.instagram.com/defactofm/profilecard/?igsh=MmYxMjMxajd3N2V2" target="_blank" class="margin-p" data-toggle="tooltip" title="Our instagram page">
+                      <i class="fa-brands fa-instagram fa-2xl" style="color: #E4405F;"></i>
+                  </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2024 Meyirim. All rights reserved.
+        </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/66f64c353b.js" crossorigin="anonymous"></script>
+
+  <script src="js/shared.js"></script>
+  <script src="js/about.js"></script>
+
+
 </body>
 </html>

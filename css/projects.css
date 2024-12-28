@@ -1,26 +1,12 @@
 /* Page-Specific Styles for Projects Page */
-main {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-  
-h1 {
-  font-size: 2rem;
-  color: #333;
-}
-
-p {
-  font-size: 1.1rem;
-}
-
-.projects {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 75px;
-}
-
-.project-block {
+  }
+  
+  .project-block {
     flex: 0 0 calc(33.33% - 20px);
     margin: 10px;
     position: relative;
@@ -29,14 +15,14 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.project-block:hover {
+  }
+  
+  .project-block:hover {
     filter: brightness(0.7);
     transform: scale(1.05);
-}
-
-.project-name {
+  }
+  
+  .project-name {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,14 +32,44 @@ p {
     font-size: 29px;
     opacity: 0;
     transition: opacity 0.3s;
-}
-
-.project-block:hover .project-name {
+  }
+  
+  .project-block:hover .project-name {
     opacity: 1;
-}
-
-.project-block {
+  }
+  
+  .project-block {
     width: 300px;
     height: 450px;
-}
+  }
   
+  .project-page {
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .project-padding {
+    padding: 60px;
+  }
+  
+  .project-text {
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 50%;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .collabs {
+    font-size: 26px;
+    max-width: 50%;
+    word-wrap: break-word;
+    line-height: 1.5;
+  }
+  
+  .project-image {
+    width: 97%;
+    height: 750px;
+    margin: 20px auto;
+    display: block;
+  }

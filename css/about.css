@@ -1,17 +1,26 @@
 /* Page-Specific Styles for About Page */
-main {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-  }
+.about-container p[data-lang-text="storyText"] {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 15px;
+}
+
+.about-container p[data-lang-text="storyText"] br {
+    margin-bottom: 10px;
+}
+
+.about-container h4 {
+    margin-left: 14px;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
   
