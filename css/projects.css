@@ -1,0 +1,59 @@
+/* Page-Specific Styles for Projects Page */
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+  
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.project-block {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-block:hover {
+    filter: brightness(0.7);
+    transform: scale(1.05);
+}
+
+.project-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 29px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-block:hover .project-name {
+    opacity: 1;
+}
+
+.project-block {
+    width: 300px;
+    height: 450px;
+}
+  

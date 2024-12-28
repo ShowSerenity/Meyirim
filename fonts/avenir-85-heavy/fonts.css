@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'avenirheavy';
+    src: url('avenir-85-heavy-webfont.woff2') format('woff2'),
+         url('avenir-85-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

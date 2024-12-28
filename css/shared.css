@@ -1,0 +1,380 @@
+/* General Header and Navigation Styles */
+
+/* Page-Specific Styles for Home Page */
+@font-face {
+  font-family: 'avenirheavy';
+  src: url('fonts/avenir-85-heavy/avenir-85-heavy-webfont.woff2') format('woff2'),
+       url('fonts/avenir-85-heavy/avenir-85-heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+      
+body {
+  color: #2C2F83;
+  background-color: #FCE7DA;
+  margin: 0;
+  padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'avenirheavy';
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'avenirheavy';
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 60px;
+}
+
+h4 {
+  font-family: 'avenirheavy';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header {
+  background-color: #feeee3;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+header img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #2C2F83;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #4145AC;
+}
+
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.project-block {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: filter 0.3s, transform 0.3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-block:hover {
+  filter: brightness(0.7);
+  transform: scale(1.05);
+}
+
+.project-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 29px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-block:hover .project-name {
+  opacity: 1;
+}
+
+.project-block {
+  width: 300px;
+  height: 450px;
+}
+
+.project-page {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.project-padding {
+  padding: 60px;
+}
+
+.project-text {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 50%;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.collabs {
+  font-size: 26px;
+  max-width: 50%;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.project-image {
+  width: 97%;
+  height: 750px;
+  margin: 20px auto;
+  display: block;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.contact-container {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.gallery {
+  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 2px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.photo img {
+  width: 380px;
+  height: 350px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+#icons {
+  margin-bottom: 10px;
+}
+
+header .icon img {
+  width: 32px;
+  height: auto;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #feeee3;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4B0082;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #000080;
+}
+
+.embed-responsive-item {
+  width: 100%;
+  height: 250px;
+}
+
+.container {
+  padding-bottom: 60px;
+}
+
+.carousel-item {
+  height: 1000px;
+}
+
+#btn-back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+display: none;
+}
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Arrow styling */
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow upwards */
+.dropdown:hover .arrow {
+  transform: rotate(180deg);
+}
+
+  
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1;
+  text-align: left;
+  position: relative; /* For relative positioning of child elements */
+  padding-bottom: 45px; /* Space for the "Посмотреть все" link */
+}
+  
+.dropdown-content a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* View All Link */
+.view-all-link {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  position: absolute; /* Position in the bottom-right */
+  bottom: 10px;
+  right: 10px;
+}
+
+.view-all-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Dropdown visibility on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+}
+
+
+/* Multi-column Dropdown */
+.dropdown-content {
+  column-count: 2;
+  column-gap: 10px;
+}
+  
+/* Language Switcher */
+.language-switcher {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.language-switcher button {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.language-switcher button:hover {
+  background-color: #e6f0ff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Footer style */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: bottom 0.3s ease-in-out;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>  
+</head>
+<body>
+
+    <header class="bg-feeee3 text-center py-4">
+
+        <!--Logo-->
+        <h1>MEYIRIM</h1>
+        
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-feeee3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Links-->
+        <div id="icons">
+            <a href="https://www.youtube.com/channel/UCoiCI-hrRZCS63ETqBfeLBg" target="_blank" class="icon" data-toggle="tooltip" title="Visit My Youtube Channel">
+                <i class="fa-brands fa-youtube fa-bounce fa-2xl" style="color: #000000"></i>
+            </a>
+            <a href="https://open.spotify.com/user/zp3xpof1yb2melw07iknqknuv?si=26c47d56e0dd4a65" target="_blank" class="icon" data-toggle="tooltip" title="Listen for my Music here">
+                <i class="fa-brands fa-spotify fa-flip fa-2xl" style="color: #000000;"></i>
+            </a>
+            <a href="https://on.soundcloud.com/9oBka" target="_blank" class="icon" data-toggle="tooltip" title="And here">
+                <i class="fa-brands fa-soundcloud fa-beat fa-2xl" style="color: #000000;"></i>
+            </a>
+
+            <div class="language-switcher">
+              <button onclick="setLanguage('ru')">Рус</button>
+              <button onclick="setLanguage('en')">Eng</button>
+              <button onclick="setLanguage('kk')">Қаз</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        
+        <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+            >
+        <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <h1 style="margin-top: 120px;">STORY</h1>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div id="media-carousel" class="carousel slide mb-4" data-ride="carousel" data-interval="3000">
+        
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="pics/crowd.jpeg" alt="crowd" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pics/slipknot4.gif" alt="slipknot4" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="pics/fguitariststage.gif" alt="coldplay-view" class="d-block w-100">
+                            </div>
+                        </div>
+        
+                        <!-- Controls -->
+                        <a class="carousel-control-prev" href="#media-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#media-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center">Composed Music</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Full-width video -->
+                <div class="col-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Exa4IdXamqY?si=R4bWL_AgcB0ewm0J" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Three videos in the second row -->
+                <div class="col-md-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I70SjH7UGjY?si=xLfUgWOxbrp0ToY2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/isfaoZwCgPM?si=WuoCC4A7uRm1KbnA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F6RzCOnGpQY?si=6Ug_Hcw-7XEMl0Ra" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <h2>Gallery of Memories</h2>
+            <div class="photo-gallery">
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/acdc-rock-and-roll.gif" alt="acdc">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/bow.gif" alt="bow">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/guitarplay.gif" alt="guitarplay">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/guitaristplay.gif" alt="guitaristplay">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/fsing.gif" alt="fsing">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/singing-performing.gif" alt="singing-performing">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/joanjett1.gif" alt="joanjett1">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/rockgirl.gif" alt="rockgirl">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/stageguitar.gif" alt="stageguitar">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/sodo.gif" alt="sodo">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/guitaristoldschool.gif" alt="guitaristoldschool">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/slipknot5.gif" alt="slipknot5">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/slipknot.gif" alt="slipknot">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/fguitariststage.gif" alt="fguitariststage">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img src="pics/joan-jett.gif" alt="joan-jett">
+                    </div>
+                    <div class="photo">
+                        <img src="pics/joanjett2.gif" alt="joanjett2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>asanali.rymgali@gmail.com</p>
+        <a href="https://www.youtube.com/channel/UCoiCI-hrRZCS63ETqBfeLBg" target="_blank" class="icon" data-toggle="tooltip" title="Visit My Youtube Channel">
+          <i class="fa-brands fa-youtube fa-bounce fa-2xl" style="color: #000000"></i>
+      </a>
+      <a href="https://open.spotify.com/user/zp3xpof1yb2melw07iknqknuv?si=26c47d56e0dd4a65" target="_blank" class="icon" data-toggle="tooltip" title="Listen for my Music here">
+          <i class="fa-brands fa-spotify fa-flip fa-2xl" style="color: #000000;"></i>
+      </a>
+      <a href="https://on.soundcloud.com/9oBka" target="_blank" class="icon" data-toggle="tooltip" title="And here">
+          <i class="fa-brands fa-soundcloud fa-beat fa-2xl" style="color: #000000;"></i>
+      </a>
+        <p>&copy; 2023 Story</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/66f64c353b.js" crossorigin="anonymous"></script>
+
+    <script src="js/shared.js"></script>
+
+</body>
+</html>

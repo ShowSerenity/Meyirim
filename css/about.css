@@ -1,0 +1,17 @@
+/* Page-Specific Styles for About Page */
+main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
